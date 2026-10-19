@@ -1,9 +1,12 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Añadir Restaurante</ion-title>
+    <ion-title>
+      <i class="fa-solid fa-bullhorn"></i>
+      Añadir Restaurante</ion-title>
     <ion-buttons slot="end">
       <!-- MODIFICACIÓN: acción para cerrar el modal sin guardar. -->
       <ion-button type="button" (click)="cancelar()" [disabled]="guardando()">
+        <i class="fa-solid fa-ban"></i>
         Cancelar
       </ion-button>
     </ion-buttons>
@@ -16,6 +19,7 @@
     <ion-list lines="full">
       <!-- MODIFICACIÓN: los ocho campos del formulario están vinculados al FormGroup. -->
       <ion-item>
+        <i class="fa-solid fa-file-signature" style="margin-right: 6px;"></i>
         <ion-input
           label="Nombre"
           labelPlacement="stacked"
@@ -30,6 +34,7 @@
       }
 
       <ion-item>
+        <i class="fa-solid fa-globe" style="margin-right: 6px; background-color: red; color:green;"></i>
         <ion-input
           label="Territorio"
           labelPlacement="stacked"
@@ -44,6 +49,7 @@
       }
 
       <ion-item>
+        <i class="fa-solid fa-location-dot" style="margin-right: 6px; background-color:blue; color: white;"></i>
         <ion-input
           label="Localidad"
           labelPlacement="stacked"
@@ -53,6 +59,7 @@
       </ion-item>
 
       <ion-item>
+        <i class="fa-solid fa-home" style="margin-right: 6px; background-color:  greenyellow;  "></i>
         <ion-input
           label="Dirección"
           labelPlacement="stacked"
@@ -61,7 +68,8 @@
         </ion-input>
       </ion-item>
 
-      <ion-item>
+      <ion-item >
+        <i class="fa-solid fa-phone" style="margin-right: 6px; background-color: green; color: white;"></i>
         <ion-input
           label="Teléfono"
           labelPlacement="stacked"
@@ -72,6 +80,7 @@
       </ion-item>
 
       <ion-item>
+        <i class="fa-solid fa-earth-europe" style="margin-right: 6px; background-color:blue; color: green;"></i>
         <ion-input
           label="Web"
           labelPlacement="stacked"
@@ -82,6 +91,7 @@
       </ion-item>
 
       <ion-item>
+        <i class="fa-solid fa-star" style="color: gold; margin-right: 6px; background-color: red;"></i>
         <ion-input
           label="Estrellas Michelin"
           labelPlacement="stacked"
@@ -94,6 +104,7 @@
       </ion-item>
 
       <ion-item>
+        <i class="fa-solid fa-sun" style="color: yellow; margin-right: 6px; background-color: red;"></i>
         <ion-input
           label="Soles Repsol"
           labelPlacement="stacked"
