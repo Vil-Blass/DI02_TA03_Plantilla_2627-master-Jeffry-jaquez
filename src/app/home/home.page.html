@@ -2,6 +2,17 @@
   <ion-toolbar>
     <ion-title>Guía de Restaurantes Euskadi</ion-title>
     <ion-buttons slot="end">
+          <!-- //Ver PDF del resumen de la pericion a la ia -->
+           <ion-button>
+            <a href="assets/informe-chat-alta-restaurante.pdf" target="_blank" title="Ver PDF de la guía de restaurantes">
+              <i class="fa-solid fa-file-pdf" style="margin-right:6px; background-color: red; color: white; border-radius: 40%;
+                width: 18px; height: 18px; scale: 1.2;"></i>
+              Ver PDF
+            </a>
+           </ion-button>
+
+
+
       <!-- MODIFICACIÓN: abre el formulario modal para añadir un restaurante. -->
       <ion-button (click)="abrirModalAnadir()" [disabled]="cargando() || importando()" style="background-color: #ccc; border-radius: 8px;">
 
