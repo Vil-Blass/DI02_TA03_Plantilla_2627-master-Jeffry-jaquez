@@ -1,0 +1,126 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Añadir Restaurante</ion-title>
+    <ion-buttons slot="end">
+      <!-- MODIFICACIÓN: acción para cerrar el modal sin guardar. -->
+      <ion-button type="button" (click)="cancelar()" [disabled]="guardando()">
+        Cancelar
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <!-- MODIFICACIÓN: conecta el formulario reactivo y guarda al enviarlo. -->
+  <form [formGroup]="form" (ngSubmit)="guardar()">
+    <ion-list lines="full">
+      <!-- MODIFICACIÓN: los ocho campos del formulario están vinculados al FormGroup. -->
+      <ion-item>
+        <ion-input
+          label="Nombre"
+          labelPlacement="stacked"
+          placeholder="Nombre del restaurante"
+          formControlName="documentName">
+        </ion-input>
+      </ion-item>
+      @if (form.get('documentName')?.invalid && form.get('documentName')?.touched) {
+        <ion-text color="danger" class="ion-padding-start">
+          <small>El nombre es obligatorio</small>
+        </ion-text>
+      }
+
+      <ion-item>
+        <ion-input
+          label="Territorio"
+          labelPlacement="stacked"
+          placeholder="Territorio"
+          formControlName="territory">
+        </ion-input>
+      </ion-item>
+      @if (form.get('territory')?.invalid && form.get('territory')?.touched) {
+        <ion-text color="danger" class="ion-padding-start">
+          <small>El territorio es obligatorio</small>
+        </ion-text>
+      }
+
+      <ion-item>
+        <ion-input
+          label="Localidad"
+          labelPlacement="stacked"
+          placeholder="Localidad"
+          formControlName="locality">
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input
+          label="Dirección"
+          labelPlacement="stacked"
+          placeholder="Dirección"
+          formControlName="address">
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input
+          label="Teléfono"
+          labelPlacement="stacked"
+          placeholder="Teléfono"
+          type="tel"
+          formControlName="phone">
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input
+          label="Web"
+          labelPlacement="stacked"
+          placeholder="https://"
+          type="url"
+          formControlName="web">
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input
+          label="Estrellas Michelin"
+          labelPlacement="stacked"
+          placeholder="0"
+          type="number"
+          min="0"
+          max="3"
+          formControlName="michelinStar">
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-input
+          label="Soles Repsol"
+          labelPlacement="stacked"
+          placeholder="0"
+          type="number"
+          min="0"
+          max="3"
+          formControlName="repsolSun">
+        </ion-input>
+      </ion-item>
+
+    </ion-list>
+
+    <!-- MODIFICACIÓN: bloquea el envío inválido y muestra el estado de guardado. -->
+    <div class="ion-padding-top">
+      <ion-button
+        expand="block"
+        type="submit"
+        [disabled]="form.invalid || guardando()">
+        @if (guardando()) {
+          <ion-spinner name="crescent" class="ion-margin-end"></ion-spinner>
+          Guardando...
+        } @else {
+          Guardar
+        }
+      </ion-button>
+    </div>
+
+  </form>
+</ion-content>

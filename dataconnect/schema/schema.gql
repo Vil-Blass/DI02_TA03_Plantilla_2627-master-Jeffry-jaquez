@@ -1,0 +1,42 @@
+type User @table {
+  username: String!
+  email: String!
+  enrollmentYear: Int!
+  bio: String
+  avatarUrl: String
+}
+
+type Module @table {
+  title: String!
+  code: String!
+  semester: Int!
+  description: String
+}
+
+type Resource @table {
+  title: String!
+  type: String!
+  url: String!
+  description: String
+  tags: String
+  module: Module
+  creator: User
+}
+
+type Progress @table {
+  status: String!
+  user: User!
+  module: Module!
+}
+
+type StudyGroup @table {
+  name: String!
+  meetingLink: String!
+  module: Module
+}
+
+type Member @table {
+  role: String!
+  user: User!
+  studyGroup: StudyGroup!
+}

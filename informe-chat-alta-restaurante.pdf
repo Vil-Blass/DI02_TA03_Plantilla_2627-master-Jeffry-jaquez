@@ -1,0 +1,150 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R] /Count 2 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Length 4474 >>
+stream
+0.09 0.38 0.37 rg
+BT /F4 23 Tf 58 777.00 Td (Alta de restaurante mediante modal) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 58 736.65 Td (Informe de trabajo \267 Tarea de aprendizaje DI02_TA03) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 58 715.15 Td (Proyecto: DI02_TA03_Plantilla_2627) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 58 693.65 Td (Fecha del informe: 19 de octubre de 2026) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 58 672.15 Td (Resultado: modal de alta implementado y conectado a Firebase mediante el servicio existente.) Tj ET
+0.09 0.38 0.37 rg
+BT /F4 14 Tf 58 645.65 Td (1. Encargo recibido) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 58 618.35 Td (El objetivo fue completar el alta de un restaurante nuevo desde un modal. El formulario deb\355a) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 58 603.85 Td (incluir documentName, territory, locality, address, phone, web, michelinStar y repsolSun; nombre) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 58 589.35 Td (y territorio son obligatorios. Tambi\351n se solicit\363 a\361adir el bot\363n \253A\361adir\273 en la p\341gina) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 58 574.85 Td (principal, llamar al servicio al guardar y cerrar el modal con el rol correspondiente.) Tj ET
+0.09 0.38 0.37 rg
+BT /F4 14 Tf 58 548.35 Td (2. Pasos realizados) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 70 521.05 Td (1. Inspecci\363n del proyecto: le\355 el componente modal \(TypeScript, HTML y estilos\), la p\341gina) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 70 506.55 Td (principal \(TypeScript, HTML y pruebas\), la interfaz Restaurante, el servicio de restaurantes, el) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 70 492.05 Td (manifiesto de paquetes y la configuraci\363n de Angular. Confirm\351 que el modal estaba creado como) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 70 477.55 Td (componente standalone y que el servicio ya dispon\355a de add\(restaurante\).) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 70 456.05 Td (2. Formulario reactivo: utilic\351 FormBuilder.nonNullable.group para los ocho campos y) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 70 441.55 Td (Validators.required para nombre y territorio. Al intentar guardar un formulario inv\341lido se) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 70 427.05 Td (marcan todos los controles como tocados.) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 70 405.55 Td (3. Plantilla del modal: vincul\351 los ocho ion-input al formulario, a\361ad\355 mensajes para los dos) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 70 391.05 Td (campos obligatorios y deshabilit\351 el bot\363n de guardar mientras el formulario sea inv\341lido o est\351) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 70 376.55 Td (guard\341ndose. Inclu\355 el indicador de carga con signal.) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 70 355.05 Td (4. Objeto y guardado: constru\355 un objeto completo de tipo Restaurante mediante getRawValue\(\) y) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 70 340.55 Td (complet\351 con cadenas vac\355as los otros campos requeridos por la interfaz. Despu\351s llam\351 a) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 70 326.05 Td (RestauranteService.add y cerr\351 el modal con rol confirm. Si ocurre un error, se informa mediante) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 70 311.55 Td (un toast. Cancelar cierra con rol cancel.) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 70 290.05 Td (5. Integraci\363n en Home: import\351 el componente standalone, a\361ad\355 el bot\363n \253A\361adir\273 y conect\351 el) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 70 275.55 Td (controlador del modal. Al confirmarse el alta, la p\341gina vuelve a cargar los restaurantes desde) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 70 261.05 Td (el servicio.) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 70 239.55 Td (6. Comentarios de cambios: se\361al\351 los bloques modificados con comentarios MODIFICACI\323N, como se) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 70 225.05 Td (solicit\363, para facilitar su identificaci\363n en cada archivo.) Tj ET
+0.09 0.38 0.37 rg
+BT /F4 14 Tf 58 198.55 Td (3. Archivos modificados) Tj ET
+0.09 0.38 0.37 rg
+BT /F4 11 Tf 58 166.25 Td (add-restaurante-modal.component.ts) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 58 143.30 Td (Formulario no nullable, validadores, cancelaci\363n, creaci\363n del restaurante completo, llamada al) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 58 128.80 Td (servicio, cierre confirmado y notificaci\363n de error.) Tj ET
+0.09 0.38 0.37 rg
+BT /F4 11 Tf 58 102.30 Td (add-restaurante-modal.component.html) Tj ET
+0.35 0.43 0.46 rg BT /F3 8 Tf 58 30 Td (Informe de trabajo \267 P\341gina 1) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F3 3 0 R /F4 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 1986 >>
+stream
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 58 785.00 Td (Campos del formulario, validaciones visibles, env\355o reactivo, bot\363n Guardar deshabilitado seg\372n) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 58 770.50 Td (el estado y spinner durante el guardado.) Tj ET
+0.09 0.38 0.37 rg
+BT /F4 11 Tf 58 744.00 Td (home.page.ts) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 58 721.05 Td (Importaci\363n y registro del componente standalone; apertura del modal y recarga de datos tras una) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 58 706.55 Td (confirmaci\363n.) Tj ET
+0.09 0.38 0.37 rg
+BT /F4 11 Tf 58 680.05 Td (home.page.html) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 58 657.10 Td (Bot\363n \253A\361adir\273 en la barra superior, conectado al m\351todo de apertura del modal.) Tj ET
+0.09 0.38 0.37 rg
+BT /F4 14 Tf 58 630.60 Td (4. Validaci\363n y estado final) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 70 603.30 Td (- El diagn\363stico del editor no detect\363 errores en los cuatro archivos modificados.) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 70 581.80 Td (- Se intent\363 ejecutar npm run build y npm run lint, pero no fue posible: el entorno no ten\355a) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 70 567.30 Td (- PowerShell disponible y no hab\355a una tarea de VS Code ya configurada. Por tanto, esos comandos no) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 70 552.80 Td (- se ejecutaron y no se afirma que hayan pasado.) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 70 531.30 Td (- No se modificaron el servicio ni la interfaz del restaurante; se reutiliz\363 el servicio existente) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 10 Tf 70 516.80 Td (- y se completaron todos los campos exigidos por el tipo Restaurante.) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 9 Tf 58 495.30 Td (Nota: este documento resume el contenido del chat y registra los pasos t\351cnicos ejecutados y el resultado de) Tj ET
+0.13 0.19 0.25 rg
+BT /F3 9 Tf 58 482.25 Td (las comprobaciones disponibles.) Tj ET
+0.35 0.43 0.46 rg BT /F3 8 Tf 58 30 Td (Informe de trabajo \267 P\341gina 2) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F3 3 0 R /F4 4 0 R >> >> /Contents 7 0 R >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000224 00000 n 
+0000000326 00000 n 
+0000004852 00000 n 
+0000004988 00000 n 
+0000007026 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+7162
+%%EOF
