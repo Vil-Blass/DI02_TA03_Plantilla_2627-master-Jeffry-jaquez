@@ -3,7 +3,7 @@
     <ion-title>Guía de Restaurantes Euskadi</ion-title>
     <ion-buttons slot="end">
       <!-- MODIFICACIÓN: abre el formulario modal para añadir un restaurante. -->
-      <ion-button (click)="abrirModalAnadir()" [disabled]="cargando() || importando()">
+      <ion-button (click)="abrirModalAnadir()" [disabled]="cargando() || importando()" style="background-color: #ccc; border-radius: 8px;">
 
         <i class="fa-solid fa-file-circle-plus" 
         style="margin-right:6px; background-color: rgb(145, 202, 40); color: white; border-radius: 40%;
@@ -11,7 +11,7 @@
         Añadir
       </ion-button>
       <ion-button (click)="confirmarImportacion()" [disabled]="cargando() || importando()"
-        title="Importar restaurantes del JSON local a Firebase">
+        title="Importar restaurantes del JSON local a Firebase" style="background-color: #ccc; border-radius: 8px;">
         @if (importando()) {
         <ion-spinner name="crescent" style="width:18px;height:18px;margin-right:6px;"></ion-spinner>
         }
@@ -20,11 +20,11 @@
         Importar JSON
       </ion-button>
       <ion-button (click)="cargarDatos()" [disabled]="cargando() || importando()"
-        title="Cargar restaurantes desde Firebase">
+        title="Cargar restaurantes desde Firebase" style="background-color: #ccc; border-radius: 8px;">
         @if (cargando()) {
         <ion-spinner name="crescent" style="width:18px;height:18px;margin-right:6px;"></ion-spinner>
         }
-        <i class="fa-solid fa-fire-flame-curved" style="margin-right:6px; background-color: darkyellow; color: red; border-radius: 50%; 
+        <i class="fa-solid fa-fire-flame-curved" style="margin-right:6px; background-color: rgb(243, 243, 74); color: red; border-radius: 50%; 
         width: 18px; height: 18px; scale: 1.5;"></i>
         Cargar datos
       </ion-button>
